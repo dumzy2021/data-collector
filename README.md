@@ -23,7 +23,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 
+## After cloning the Data collector project, run `npm install` to install all the necessary dependencies.
 
-## The project consist of a JSON-SERVER which was used as a mock up data.
+## The project also consists of a JSON-SERVER which was used as a mock up data.
 
-To start the server  `npm run server`
+Run `npm install -g json-server` to install the Json - server globally.
+
+To start the server run `npm run server`

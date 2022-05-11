@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+//TABLE SECTION
+.table-responsive {
+  box-shadow: rgb(100 100 111 / 20%) 0px 2px 6px 0px;
+}
+.table {
+  background: #f4f4f499 !important;
+  width: 100%;
+  text-align: left;
+  min-height: 200px !important;
+  margin: 0;
+  // border: 1px solid #70707014;
+  tbody > tr > td,
+  thead > tr > th {
+    padding: 12px 20px !important;
+  }
+
+  :not(caption) > tr > th {
+    margin-bottom: 10px;
+    background: #000148;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    border: none !important;
+    border-width: none !important;
+    white-space: nowrap;
+  }
+  :not(caption) > tr > td {
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    background: #fff;
+    color: #4d4f5c;
+  }
+  tfoot > tr > td {
+    background: #f4f4f499;
+  }
+  :not(caption) > tr:hover {
+    background: #efefef;
+  }
+}
+
+.table-hover > tbody > tr:hover > * {
+  cursor: pointer;
+  color: #000148;
+}
+
+.table > :not(:first-child) {
+  border-top: none;
+}
+.table > :not(caption) > tr:last-child {
+  border-bottom-style: hidden;
+}
+
+.status {
+  color: #000148;
+  padding: 0.6rem 1rem;
+}
+.approved {
+  background-color: #439d16;
+}
+.revoked {
+  background-color: #ff0000;
+}
+.pending {
+  background-color: #ffd70d;
+}
+// .dot_primary {
+//   background-color: #00c2ff;
+// }

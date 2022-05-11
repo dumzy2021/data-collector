@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1000,
+      "username": "cso",
+      "password": "cso",
+      "firstname": "Dave",
+      "lastname": "crane",
+      "role": "CSO"
+    },
+    {
+      "id": 2000,
+      "username": "admin",
+      "password": "admin",
+      "firstname": "Dammy",
+      "lastname": "Ope",
+      "role": "ADMIN"
+    },
+    {
+      "id": 3000,
+      "username": "supervisor",
+      "password": "supervisor",
+      "firstname": "Davis",
+      "lastname": "Dre",
+      "role": "SUPERVISOR"
+    },
+    {
+      "username": "ikemefuna.ezieke@botosoft.net",
+      "password": "@#$Maze7619",
+      "firstname": "Peace ufuoma",
+      "lastname": "Edenogba ",
+      "role": "SUPERVISOR",
+      "id": 1414512
+    }
+  ],
+  "cases": [
+    {
+      "title": "hell boo",
+      "description": "I wanted to check up on you",
+      "userID": 1000,
+      "createdBy": "Davecrane",
+      "status": 0,
+      "approvedBy": "",
+      "createdAt": "2022-05-10T21:04:02.078Z",
+      "id": 5861922
+    }
+  ]
+}

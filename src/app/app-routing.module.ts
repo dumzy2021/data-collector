@@ -43,7 +43,7 @@ const routes: Routes = [
     canActivate: [AuthGuard],
     data: { roles: [Role.ADMIN, Role.SUPERVISOR] },
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

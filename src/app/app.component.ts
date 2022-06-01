@@ -16,11 +16,7 @@ export class AppComponent implements OnInit {
     public menuService: MenuService
   ) {
     this.authenticationService.user.subscribe((x) => (this.user = x));
-    this.menuService.menu.subscribe(
-      (s) =>
-        // console.log(s);
-        (this.appMenu = s)
-    );
+    this.menuService.menu.subscribe((s) => (this.appMenu = s));
   }
   ngOnInit(): void {}
   get isCso() {

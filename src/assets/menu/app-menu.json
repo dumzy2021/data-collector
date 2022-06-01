@@ -1,0 +1,16 @@
+{
+  "menu": [
+    {
+      "title": "Users",
+      "link": "/users"
+    },
+    {
+      "title": "Create Users",
+      "link": "/create-users"
+    },
+    {
+      "title": "User Cases",
+      "link": "/user-cases"
+    }
+  ]
+}

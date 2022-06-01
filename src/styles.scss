@@ -8,7 +8,7 @@
   width: 100%;
   text-align: left;
   min-height: 200px !important;
-  margin: 0;
+  margin: 0 !important;
   // border: 1px solid #70707014;
   tbody > tr > td,
   thead > tr > th {
@@ -73,3 +73,18 @@
 // .dot_primary {
 //   background-color: #00c2ff;
 // }
+.form-control:focus {
+  // background-color: #fff;
+  // border-color: #0d1154;
+  outline: 0;
+  box-shadow: none;
+}
+// For paginations
+
+.my-pagination ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.my-pagination ul .current {
+  background: #000148 !important;
+}

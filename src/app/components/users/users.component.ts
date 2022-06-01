@@ -8,6 +8,9 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./users.component.scss'],
 })
 export class UsersComponent implements OnInit {
+  page: number = 1;
+  tableSize: number = 3;
+  tableSizes: number[] = [3, 6, 9, 12];
   users: any;
   allRoles: string[] = ['ALL', 'CSO', 'ADMIN', 'SUPERVISOR'];
   filterForm!: FormGroup;
@@ -18,6 +21,9 @@ export class UsersComponent implements OnInit {
     this.filterForm = this.fb.group({
       role: [this.allRoles[0]],
     });
+  }
+  onTableSizeChange(e: any) {
+    this.tableSize = +e.target.value;
   }
   getUsers() {
     this.userService.getAllUsers().subscribe({

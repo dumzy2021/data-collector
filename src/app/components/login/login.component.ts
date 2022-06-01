@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
       .subscribe({
         next: (data: any) => {
           if (!data.length) {
-            this.notify.showError('Please Enter a valid username and password');
+            this.notify.showError('Invalid Username or Password');
           } else {
             // get return url from query parameters or default to home page
             const returnUrl =

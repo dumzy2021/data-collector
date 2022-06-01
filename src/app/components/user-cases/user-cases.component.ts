@@ -10,6 +10,9 @@ import { UtilsService } from 'src/app/services/utils.service';
   styleUrls: ['./user-cases.component.scss'],
 })
 export class UserCasesComponent implements OnInit {
+  page: number = 1;
+  tableSize: number = 3;
+  tableSizes: number[] = [3, 6, 9, 12];
   user: any;
   cases: any = [];
   filterForm!: FormGroup;
@@ -29,10 +32,12 @@ export class UserCasesComponent implements OnInit {
       status: [this.allStatus.length - 1],
     });
   }
+  onTableSizeChange(e: any) {
+    this.tableSize = +e.target.value;
+  }
   getUsersCases() {
     this.caseService.getAllCases().subscribe({
       next: (data) => {
-        console.log(data);
         this.cases = data;
       },
       error: (error) => {

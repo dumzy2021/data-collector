@@ -24,22 +24,31 @@
             >Home</a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngFor="let menu of appMenu">
           <a
+            [title]="menu.title"
             class="nav-link"
-            routerLink="/create-cases"
-            *ngIf="isCso"
+            routerLink="{{ menu.link }}"
             [routerLinkActive]="'active'"
-            >Create Cases</a
+            >{{ menu.title }}</a
           >
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a
             class="nav-item nav-link"
             routerLink="/my-cases"
             *ngIf="isCso"
             [routerLinkActive]="'active'"
             >My Cases</a
+          >
+        </li> -->
+        <!-- <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/create-cases"
+            *ngIf="isCso"
+            [routerLinkActive]="'active'"
+            >Create Cases</a
           >
         </li>
         <li class="nav-item">
@@ -68,12 +77,12 @@
             [routerLinkActive]="'active'"
             >User cases</a
           >
-        </li>
+        </li> -->
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link"
-            >Hi,{{ user?.lastname }} ({{ user?.role.toLowerCase() }})</a
+            >Hi,{{ user?.lastname }} ({{ user?.role?.toLowerCase() }})</a
           >
         </li>
         <li class="nav-item">

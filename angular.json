@@ -73,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "thrift-stores:build:production"
+              "browserTarget": "data-collector:build:production"
             },
             "development": {
-              "browserTarget": "thrift-stores:build:development"
+              "browserTarget": "data-collector:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "thrift-stores:build"
+            "browserTarget": "data-collector:build"
           }
         },
         "test": {
@@ -103,5 +103,5 @@
       }
     }
   },
-  "defaultProject": "thrift-stores"
+  "defaultProject": "data-collector"
 }

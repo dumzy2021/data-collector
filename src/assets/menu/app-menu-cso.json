@@ -1,0 +1,12 @@
+{
+  "menu": [
+    {
+      "title": "Create Cases",
+      "link": "/create-cases"
+    },
+    {
+      "title": "My Cases",
+      "link": "/my-cases"
+    }
+  ]
+}
